@@ -45,7 +45,21 @@
                     'use strict';
                     debugger;
 
-                    // write me! (... without using cloneNode, that's kind of cheating)
+                    const actual = document.getElementById('actual');
+                    const h1 = document.createElement('h1');
+                    h1.innerText = 'a list of things';
+
+                    const ul = document.createElement('ul');
+                    const items = ['robots', 'solar systems', 'oil'];
+                    items.forEach(item => {
+                    const li = document.createElement('li');
+                      li.innerText = item;
+                      ul.append(li);
+                    });
+
+                    actual.innerHTML = '';
+                    actual.append(h1, ul);
+
                 </script>
             </div>
 

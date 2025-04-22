@@ -45,7 +45,11 @@
                     'use strict';
                     debugger;
 
-                    // write me! (... without using cloneNode, that's kind of cheating)
+                    const actual = document.getElementById('actual');
+                    const list = actual.querySelector('ul');
+                    list.children[0].innerText = 'robots';
+                    list.children[1].innerText = 'solar systems';
+                    list.children[2].innerText = 'oil';
                 </script>
             </div>
 

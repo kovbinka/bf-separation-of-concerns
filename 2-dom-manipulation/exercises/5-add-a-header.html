@@ -44,7 +44,15 @@
                     'use strict';
                     debugger;
 
-                    // write me! (... without using cloneNode, that's kind of cheating)
+                    const aListOfThings = document.createElement('h1');
+                    aListOfThings.innerText = 'a list of things';
+
+                    const list = document.getElementById('actual');
+                    const genList = list.querySelector('ul');
+                    actual.insertBefore(aListOfThings, genList);
+                    genList.children[0].innerText = 'robots';
+                    genList.children[1].innerText = 'solar systems';
+                    genList.children[2].innerText = 'oil';
                 </script>
             </div>
 
