@@ -149,15 +149,15 @@
                 debugger;
 
                 const target = event.target;
-                if (target.nodeName !== '_') {
+                if (target.nodeName !== 'BUTTON') {
                     return;
                 }
 
-                if (event.type === '_') {
+                if (event.type === 'focusin') {
                     target.style.backgroundColor = 'black';
                     target.style.color = 'white';
-                } else if (event.type === '_') {
-                    target.style.backgroundColor = 'white';
+            } else if (event.type === 'click') {
+                    target.style.backgroundColor = 'red';
                     target.style.color = 'black';
                 }
             };

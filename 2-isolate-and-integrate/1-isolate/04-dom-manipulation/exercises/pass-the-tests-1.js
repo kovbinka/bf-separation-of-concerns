@@ -13,6 +13,17 @@ console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 //  insert something before the <section>
 //  remove the <h1>
 //  append something to the end
+const pReplaced = divEl.children[0];
+const navReplace = document.createElement('nav');
+divEl.replaceChild(navReplace, pReplaced);
+
+const section = divEl.children[1];
+const newP = document.createElement('h2');
+divEl.insertBefore(newP, section);
+
+const lastTag = divEl.children[3];
+const h1Replace = document.createElement('p');
+divEl.replaceChild(h1Replace, lastTag);
 
 // --- --- --- --- --- ---
 

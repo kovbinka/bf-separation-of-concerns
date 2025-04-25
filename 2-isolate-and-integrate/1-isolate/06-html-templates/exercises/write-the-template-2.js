@@ -7,7 +7,7 @@
  * @returns {string} an HTML string
  */
 const renderSummaryDetails = (caption, mainText) => {
-    return `<details>\n` + `  _\n` + `  _\n` + `</details>`;
+    return `<details>\n` + `  ${caption}\n` + `  ${mainText}\n` + `</details>`;
 };
 
 const _1_tallThings = renderSummaryDetails(
