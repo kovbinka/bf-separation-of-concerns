@@ -1,2 +1,4 @@
-// this file is the program's Entry Point
+import initHandler from "../listeners/listener.js";
 debugger;
+
+document.addEventListener('DOMContentLoaded', initHandler);
